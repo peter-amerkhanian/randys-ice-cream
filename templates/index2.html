@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Randy's</title>
 
     <style>
@@ -127,6 +127,7 @@
         a:hover {
             text-decoration: none;
         }
+        
 
         /* * { outline: 1px red solid !important; visibility: visible !important } */
     </style>
@@ -138,7 +139,9 @@
             <div class="col-sm">
             </div>
             <div class="col-sm">
+                <a href="{{ url_for('index') }}">
                 <img src="static/LOGO-01.png" style='width:80%;' alt="Logo">
+            </a>
             </div>
             <div class="col-sm">
             </div>
@@ -149,7 +152,7 @@
 
             <div class="col-sm">
                 <div class="img__wrap">
-                    <h4 class="img__description"><b>ORDER</b></h4>
+                    <h4 class="img__description"><b>SHOP</b></h4>
                     <a href="{{ url_for('order') }}"><img class="img-shift"
                             src="static/Banana Man.svg" style='width:90%;z-index:2;' title="Banana Man"
                             alt="Order"></a>
@@ -179,13 +182,22 @@
     </div>
 
     <footer class="footer">
-        <div class="container">
-            <a class="btn btn-outline-dark" href="#">
+        <div class="container" id="contact">
+            <a href="#">
                 <h3><b>CONTACT</b></h3>
             </a>
         </div>
     </footer>
 
 </body>
+
+<script>
+    $(document).ready(function(){
+      $("#contact").click(function(){
+        $(this).html("<b>510-555-5555 | randall@mail.com </b>");
+        $(this).css("color", "black");
+      });
+    });
+    </script>
 
 </html>
