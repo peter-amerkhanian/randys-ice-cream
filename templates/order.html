@@ -124,14 +124,27 @@
             font-size: x-large;
         }
 
-        .map-responsive iframe {
-            left: 0;
-            top: 0;
-            height: 70%;
-            width: 70%;
-            position: absolute;
-
+        .customiframe {
+            height: 500px;
+            width: 700px;
         }
+
+        @media (max-width: 1100px) {
+
+            .customiframe {
+                height: 400px;
+                width: 600px;
+            }
+
+
+            @media (max-width: 500px) {
+
+                .customiframe {
+                    height: 270px;
+                    width: 270px;
+                }
+
+            }
     </style>
 </head>
 
@@ -153,13 +166,13 @@
         </div>
         <div class="container">
             <p class="text-center">
-                    <a href="#" class="btn btn-outline-dark" target="blank_">
-                        <b>Current Menu</b>
-                    </a>
+                <a href="#" class="btn btn-outline-dark" target="blank_">
+                    <b>Current Menu</b>
+                </a>
             </p>
             <p class="text-center">
                 <b>Hours:</b>
-                <ul class="list-group text-center">
+            <ul class="list-group text-center">
                 Monday: CLOSED<br>
                 Tuesday: CLOSED<br>
                 Wednesday: 12-8pm<br>
@@ -170,19 +183,21 @@
             </ul>
             </p>
             <p class="text-center"><b>Location:</b><br>
-                    <a href="https://www.google.com/maps/place/1115+Solano+Ave,+Albany,+CA+94706/@37.8905341,-122.3004055,17z/data=!3m1!4b1!4m5!3m4!1s0x80857931f477c577:0x95c8bd5777563f2c!8m2!3d37.8905341!4d-122.2982168"
-                        class="text-dark" target="blank_">
-                        1115 Solano Ave, Albany, CA 94706
-                    </a>
+                <a href="https://www.google.com/maps/place/1115+Solano+Ave,+Albany,+CA+94706/@37.8905341,-122.3004055,17z/data=!3m1!4b1!4m5!3m4!1s0x80857931f477c577:0x95c8bd5777563f2c!8m2!3d37.8905341!4d-122.2982168"
+                    class="text-dark" target="blank_">
+                    <ul class="list-group text-center" style="text-decoration: underline;">1115 Solano Ave, Albany, CA
+                        94706</ul>
+
+                </a>
             </p>
         </div>
-        <p class="text-center">
+        <div class="container text-center">
 
-            <iframe
+            <iframe class="customiframe"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.707009545513!2d-122.30040548467903!3d37.890534079738366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857931f477c577%3A0x95c8bd5777563f2c!2s1115%20Solano%20Ave%2C%20Albany%2C%20CA%2094706!5e0!3m2!1sen!2sus!4v1618065601895!5m2!1sen!2sus"
-                width="500" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                frameborder="0" style="border:0" allowfullscreen></iframe>
 
-        </p>
+        </div>
     </div>
     </div>
 
