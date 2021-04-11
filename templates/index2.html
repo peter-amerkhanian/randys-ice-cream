@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="static/LOGO-01.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Randy's</title>
+
+    <style>
+        /* html {
+            position: relative;
+            min-height: 100%;
+        } */
+
+
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-bottom: 2%;
+}
+@media (max-width: 820px) {
+    .footer {
+  position: relative;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-bottom: 3%
+}
+}
+
+
+        .img-shift {
+            border-radius: 50%;
+            -webkit-transition: -webkit-transform .4s ease-in-out;
+            transition: transform .4s ease-in-out;
+        }
+
+        /* .img-shift:hover {
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        } */
+
+        /* relevant styles */
+        .img__wrap {
+            position: relative;
+            width: 100%;
+            border-radius: 50%;
+            -webkit-transition: -webkit-transform .4s ease-in-out;
+            transition: transform .4s ease-in-out;
+        }
+
+        @media (max-width: 820px) {
+
+            .img__wrap {
+                position: relative;
+                margin-top: 10vmax;
+                margin-bottom: 10vmax;
+                width: 100%;
+                border-radius: 50%;
+                -webkit-transition: -webkit-transform .4s ease-in-out;
+                transition: transform .4s ease-in-out;
+            }
+
+        }
+
+
+
+        .img__description {
+            position: relative;
+            top: 3vmax;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            color: black;
+            visibility: hidden;
+            text-align: center;
+            opacity: 0;
+            z-index: 2;
+            /* transition effect. not necessary */
+            transition: opacity .4s, visibility .2s;
+        }
+
+        @media (max-width: 820px) {
+
+            .img__description {
+                position: relative;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                color: black;
+                visibility: visible;
+                text-align: center;
+                opacity: 1;
+                z-index: 2;
+            }
+
+        }
+
+        .img__wrap:hover .img__description {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .img__wrap:hover .img-shift {
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        a:link {
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        /* * { outline: 1px red solid !important; visibility: visible !important } */
+    </style>
+</head>
+
+<body style="background-color: #fffdbd;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+            </div>
+            <div class="col-sm">
+                <img src="static/LOGO-01.png" style='width:80%;' alt="Logo">
+            </div>
+            <div class="col-sm">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm">
+                <div class="img__wrap">
+                    <h4 class="img__description"><b>ORDER</b></h4>
+                    <a href="{{ url_for('order') }}"><img class="img-shift"
+                            src="static/Banana Man.svg" style='width:90%;z-index:2;' title="Banana Man"
+                            alt="Order"></a>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm">
+                <div class="img__wrap">
+                    <h4 class="img__description"><b>ABOUT</b></h4>
+                    <a href="{{ url_for('about') }}"><img class="img-shift" src="static/Cone Man.svg"
+                            style='width:90%;z-index:1;' title="Smiley face" alt="About"></a>
+                </div>
+
+            </div>
+            <div class="col-sm">
+                <div class="img__wrap">
+                    <h4 class="img__description"><b>INSTAGRAM</b></h4>
+                    <a href="https://www.instagram.com/randysbesticecream/" target="_blank"><img class="img-shift"
+                            src="static/strawberry man.svg" style='width:90%;' title="Smiley face" alt="Instagram"></a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <a class="btn btn-outline-dark" href="#">
+                <h3><b>CONTACT</b></h3>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

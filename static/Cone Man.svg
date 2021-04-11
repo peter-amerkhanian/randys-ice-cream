@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 1190.7 841.995">
+<metadata>
+<vectornator:setting key="DynamicGuides" value="1"/>
+<vectornator:setting key="Units" value="Points"/>
+<vectornator:setting key="GuidesVisible" value="1"/>
+<vectornator:setting key="GridSpacing" value="36"/>
+<vectornator:setting key="SnapToGuides" value="1"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+</metadata>
+<defs>
+<linearGradient y1="398.665" id="LinearGradient" x1="643.843" y2="369.504" x2="518.58" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 23.389 -62.3345)">
+<stop stop-color="#f6d67a" offset="0"/>
+<stop stop-color="#fff2d7" offset="0.986753"/>
+</linearGradient>
+<linearGradient y1="654.659" id="LinearGradient_2" x1="482.972" y2="698.25" x2="598.588" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 23.389 -62.3345)">
+<stop stop-color="#ffcb91" offset="0.0223065"/>
+<stop stop-color="#d7872c" offset="1"/>
+</linearGradient>
+<radialGradient cx="375.313" r="32.0395" id="RadialGradient" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 129.145 62.3995)" cy="275.369">
+<stop stop-color="#ef1616" offset="0"/>
+<stop stop-color="#f54c4c" offset="0.580121"/>
+</radialGradient>
+<radialGradient cx="375.313" r="32.0395" id="RadialGradient_2" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 335.28 15.3632)" cy="275.369">
+<stop stop-color="#ef1616" offset="0"/>
+<stop stop-color="#f54c4c" offset="0.580121"/>
+</radialGradient>
+</defs>
+
+<g id="Body" vectornator:layerName="Body">
+<path stroke="#000000" fill-rule="evenodd" stroke-width="4" d="M453.167+310.972C453.167+228.298+521.292+161.279+605.329+161.279C689.366+161.279+757.492+228.298+757.492+310.972C757.492+393.645+689.366+460.664+605.329+460.664C521.292+460.664+453.167+393.645+453.167+310.972Z" fill="url(#LinearGradient)" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" fill-rule="evenodd" stroke-width="4" d="M605.157+778.322C591.941+779.121+494.785+451.654+507.506+422.873C516.895+401.63+609.5+400.971+698.632+420.146C725.799+425.99+624.205+777.169+605.157+778.322Z" fill="url(#LinearGradient_2)" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" stroke-width="4" d="M528.952+411.276C528.952+411.276+649.52+478.736+700.461+464.472" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" stroke-width="4" d="M507.751+443.026C507.751+443.026+622.528+532.458+695.25+493.513" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" stroke-width="4" d="M517.097+493.399C517.097+493.399+616.4+567.147+686.433+535.831" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" stroke-width="4" d="M531.55+546.616C531.55+546.616+619.32+611.445+674.218+579.192" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" stroke-width="4" d="M543.901+600.392C543.901+600.392+623.992+671.464+658.15+636.687" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" stroke-width="4" d="M559.905+657.492C559.905+657.492+595.507+708.178+645.58+679.594" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" stroke-width="4" d="M578.964+715.989C579.397+716.038+593.798+752.102+628.067+732.984" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" stroke-width="4" d="M687.004+418.198C687.004+418.384+540.539+504.322+514.02+480.04" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" stroke-width="4" d="M701.813+453.241C701.813+453.241+569.559+562.79+523.054+520.033" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" stroke-width="4" d="M689.623+521.847C689.623+521.847+565.497+600.018+536.815+572.908" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" stroke-width="4" d="M678.187+568.396C678.187+568.396+564.525+630.109+546.176+609.659" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" stroke-width="4" d="M666.349+612.674C666.349+612.674+595.233+668.588+555.39+640.718" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" stroke-width="4" d="M652.174+659.108C652.174+659.108+590.495+721.68+570.33+691.264" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" stroke-width="4" d="M638.589+702.148C638.589+702.148+603.279+729.517+579.709+717.883" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+</g>
+<g id="Mouth" vectornator:layerName="Mouth">
+<path stroke="#000000" stroke-width="4" d="M601.31+379.345C601.939+379.345+699.113+399.51+723.252+324.446" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" fill-rule="evenodd" stroke-width="4" d="M696.959+362.613C696.959+362.613+647.163+317.728+679.397+307.756C711.63+297.785+700.314+316.252+716.912+339.921" fill="#f18d8d" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" fill-rule="evenodd" stroke-width="4" d="M708.191+352.437C708.506+352.515+690.788+340.927+693.778+332.505" fill="#f39191" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+</g>
+<g id="Eyes" vectornator:layerName="Eyes">
+<path d="M570.177+289.277C570.21+289.422+571.421+242.265+532.61+250.729C519.386+253.613+518.12+258.362+514.504+262.729C507.508+271.179+507.71+283.182+508.81+285.797C510.478+289.763+505.63+309.654+539.494+303.342C543.371+302.62+541.264+304.955+542.11+302.495C543.423+298.677+543.253+291.804+544.196+291.178C545.139+290.551+531.825+285.912+531.825+285.912L543.776+275.499C543.776+275.499+532.177+255.262+532.35+255.47C532.524+255.677+559.29+240.918+570.177+289.277Z" fill-rule="evenodd" fill="#090909" opacity="1"/>
+<path d="M657.202+281.078C657.21+281.224+666.723+235.88+625.297+237.378C611.18+237.889+609.045+242.258+604.558+245.854C595.877+252.813+593.981+264.443+594.654+267.157C595.676+271.275+587.199+289.655+623.158+289.385C627.274+289.355+624.696+291.248+625.999+289.017C628.02+285.555+629.05+278.886+630.13+278.444C631.21+278.001+618.321+271.229+618.321+271.229L632.446+263.227C632.446+263.227+624.056+241.682+624.198+241.912C624.34+242.143+654.475+232.491+657.202+281.078Z" fill-rule="evenodd" fill="#090909" opacity="1"/>
+<path d="M570.708+289.377L542.461+302.082L544.009+290.653L530.941+285.968L542.775+274.966L532.588+255.381C532.588+255.381+544.398+248.83+554.901+256.153C561.328+260.634+566.191+270.817+570.708+289.377Z" fill-rule="evenodd" fill="#fbf8f6" opacity="1"/>
+<path d="M656.983+280.752L626.432+288.678L630.029+277.905L617.401+271.131L631.509+262.539L624.458+241.868C624.458+241.868+637.385+237.269+646.594+245.443C652.479+250.666+655.549+261.538+656.983+280.752Z" fill-rule="evenodd" fill="#fbf8f6" opacity="1"/>
+<path stroke="#000000" fill-rule="evenodd" stroke-width="4" d="M603.059+311.555C603.451+311.614+578.831+291.935+572.268+308.217" fill="#ffefc9" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path d="M472.418+337.77C472.418+326.847+486.763+317.993+504.458+317.993C522.153+317.993+536.497+326.847+536.497+337.77C536.497+348.692+522.153+357.547+504.458+357.547C486.763+357.547+472.418+348.692+472.418+337.77Z" fill-rule="evenodd" fill="url(#RadialGradient)" opacity="0.618076"/>
+<path d="M678.553+290.733C678.553+279.81+692.897+270.956+710.592+270.956C728.287+270.956+742.632+279.81+742.632+290.733C742.632+301.656+728.287+310.51+710.592+310.51C692.897+310.51+678.553+301.656+678.553+290.733Z" fill-rule="evenodd" fill="url(#RadialGradient_2)" opacity="0.618076"/>
+</g>
+<g id="Hat 1" vectornator:layerName="Hat 1">
+<path stroke="#1a6402" fill-rule="evenodd" stroke-width="3.43" d="M456.513+142.003C456.513+142.003+622.029+133.977+687.279+79.6415" fill="#fbfbfb" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#030a01" fill-rule="evenodd" stroke-width="2.3" d="M455.839+141.072C455.839+141.072+531.957+78.8345+687.519+78.7905" fill="#fbfbfb" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#010300" fill-rule="evenodd" stroke-width="4" d="M456.296+141.961C456.296+141.961+455.538+235.216+461.724+234.652C467.91+234.087+538.554+232.961+575.364+220.604C612.174+208.247+687.473+183.395+685.802+162.402L687.906+78.2605" fill="#fbfbfb" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#1a6402" fill-rule="evenodd" stroke-width="3.43" d="M469.872+233.113C469.872+233.113+464.928+205.98+458.22+204.886" fill="#fbfbfb" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#1a6402" fill-rule="evenodd" stroke-width="5.2" d="M457.912+193.96C457.912+193.96+479.469+148.438+541.557+145.78C541.557+145.78+587.258+140.506+592.803+134.678C592.803+134.678+597.246+133.376+604.162+131.18C629.826+123.028+672.845+113.161+686.228+94.7545" fill="#fbfbfb" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#1a6402" fill-rule="evenodd" stroke-width="3.24" d="M466.372+201.313C466.372+201.313+483.935+159.656+546.024+156.998C546.024+156.998+591.725+151.724+597.27+145.897C597.27+145.897+601.712+144.594+608.628+142.398C634.293+134.246+685.96+117.579+686.851+104.963" fill="#fbfbfb" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#1a6402" fill-rule="evenodd" stroke-width="5.09" d="M476.556+232.685C476.556+232.7+475.772+223.28+472.181+214.247C468.076+203.919+458.859+195.622+458.859+195.622" fill="#fbfbfb" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#040c01" fill-rule="evenodd" stroke-width="4" d="M457.433+141.084C457.433+141.084+649.97+79.3615+686.305+80.0135" fill="#fbfbfb" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#061202" fill-rule="evenodd" stroke-width="4" d="M456.657+141.585C456.657+141.585+675.234+100.355+686.236+78.9765" fill="#fbfbfb" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+</g>
+</svg>
