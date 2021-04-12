@@ -25,13 +25,13 @@
         }
 
 
-    .footer {
-  position: relative;
-  width: 100%;
-  color: white;
-  text-align: center;
-  margin-bottom: 3%
-}
+        .footer {
+            position: relative;
+            width: 100%;
+            color: white;
+            text-align: center;
+            margin-bottom: 3%
+        }
 
 
         .img-shift {
@@ -119,12 +119,23 @@
         a:hover {
             text-decoration: none;
         }
+        #computer{
+        display: block;
+    }
+    #phone{
+        display: none;
+    }
 
-        p {
-            font-size: x-large;
-        }
+        @media (max-width:770px){
+    #computer{
+        display: none;
+    }
+    #phone{
+        display: block;
+    }
+}
     </style>
-</head>
+    </head>
 
 <body style="background-color: #fffdbd;">
     <!-- <div class="d-inline-flex p-2 justify-content-center">
@@ -146,8 +157,11 @@
             <div class="d-flex justify-content-center">
                 <h1>About us</h1>
             </div>
-            <div class="row">
-                <div class="col-6">
+            <div class="row justify-content-center">
+                <div class="col-md-4" id="phone">
+                    <img src="static/holder.jpg" class="img-fluid" alt="Italian Trulli">
+                </div>
+                <div class="col-md-4">
                     <p style="text-align: center; max-width: 80vmax;">
                         <!-- Content goes here -->
                         Here at Randy’s Best Ice Cream we make handmade small-batch ice cream.
@@ -162,7 +176,7 @@
                     </p>
                 </div>
 
-                <div class="col-6">
+                <div class="col-md-4" id="computer">
                     <img src="static/holder.jpg" class="img-fluid" alt="Italian Trulli">
                 </div>
             </div>
@@ -170,25 +184,33 @@
             <div class="d-flex justify-content-center mt-2">
                 <h1>About me</h1>
             </div>
-            <div class="row">
-                <div class="col-6">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
                     <img src="static/holder.jpg" class="img-fluid" alt="Italian Trulli">
                 </div>
-                <div class="col-6">
+                <div class="col-md-4">
 
                     <div class="container">
-                    <p style="text-align: center;max-width: 50vmax;">
-                        <!-- Content goes here -->
-                        My name is Brandon Nguyen and I am the chef-owner of Randy’s Best Ice Cream.
-                        Anyone who grew up with me knows that my nickname is Randall. Long story.
-                        From casual to michelin-starred restaurants, I’ve been cooking my entire career.
-                        I’ve always thought ice cream was the best medium to convey flavors,
-                        so I made the switch. This is the product of my obsession with ice cream.
-                        <!-- Content ends here -->
-                    </p>
-                </div>
+                        <p style="text-align: center;max-width: 80vmax;">
+                            <!-- Content goes here -->
+                            My name is Brandon Nguyen and I am the chef-owner of Randy’s Best Ice Cream.
+                            Anyone who grew up with me knows that my nickname is Randall. Long story.
+                            From casual to michelin-starred restaurants, I’ve been cooking my entire career.
+                            I’ve always thought ice cream was the best medium to convey flavors,
+                            so I made the switch. This is the product of my obsession with ice cream.
+                            <!-- Content ends here -->
+                        </p>
+                    </div>
 
                 </div>
+            </div>
+
+            <div class="d-flex justify-content-center mt-2">
+                <h1>Press</h1>
+            </div>
+            <div class="row justify-content-center">
+                <p><a style="text-decoration: underline" href="#">
+                    "Local Ice Cream Maker Opens Shop" </a> - New York Times 4/20/2021</p>
             </div>
 
 
@@ -196,14 +218,6 @@
 
         </div>
     </div>
-
-    <footer class="footer">
-        <div class="container mt-3">
-            <a href="#" class="btn btn-outline-dark">
-                <h3><b>Press</b></h3>
-            </a>
-        </div>
-    </footer>
 
 </body>
 
