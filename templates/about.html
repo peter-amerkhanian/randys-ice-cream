@@ -119,18 +119,18 @@
         a:hover {
             text-decoration: none;
         }
-        #computer{
+        .computer{
         display: block;
     }
-    #phone{
+    .phone{
         display: none;
     }
 
         @media (max-width:770px){
-    #computer{
+    .computer{
         display: none;
     }
-    #phone{
+    .phone{
         display: block;
     }
 }
@@ -154,11 +154,24 @@
             </div>
         </div>
         <div class="container">
-            <div class="d-flex justify-content-center">
-                <h1>About us</h1>
-            </div>
+            
             <div class="row justify-content-center">
-                <div class="col-md-4" id="phone">
+                <div class="col-md-4 phone">
+                    <div class="d-flex justify-content-center mt-2">
+                        <h1>Randy's</h1>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4 computer">
+                    <div class="d-flex justify-content-center mt-2">
+                        <h1>Randy's</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-4 phone">
                     <img src="static/holder.jpg" class="img-fluid" alt="Italian Trulli">
                 </div>
                 <div class="col-md-4">
@@ -176,13 +189,19 @@
                     </p>
                 </div>
 
-                <div class="col-md-4" id="computer">
+                <div class="col-md-4 computer">
                     <img src="static/holder.jpg" class="img-fluid" alt="Italian Trulli">
                 </div>
             </div>
 
-            <div class="d-flex justify-content-center mt-2">
-                <h1>About me</h1>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center mt-2">
+                        <h1>Me</h1>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-4">
