@@ -182,22 +182,22 @@
     </div>
 
     <footer class="footer">
-        <div class="container" id="contact">
-            <a href="#">
+        <div class="container mb-1" id="contact" style="cursor:pointer; color:black;">
                 <h3><b>CONTACT</b></h3>
-            </a>
         </div>
     </footer>
 
 </body>
 
 <script>
-    $(document).ready(function(){
-      $("#contact").click(function(){
-        $(this).html("<b>510-524-4085 | randysbesticecream@gmail.com </b>");
-        $(this).css("color", "black");
-      });
-    });
+    $(document).ready(function () {
+    $("#contact").click(function () {
+        $("#contact").fadeOut(function () {
+            $("#contact").html(($("#contact").html() == '<b>510-524-4085 | randysbesticecream@gmail.com </b>') ? '<h3><b>CONTACT</b></h3>' : '<b>510-524-4085 | randysbesticecream@gmail.com </b>').fadeIn();
+        })
+    })
+});
+
     </script>
 
 </html>
