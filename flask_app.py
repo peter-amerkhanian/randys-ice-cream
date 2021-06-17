@@ -2,6 +2,8 @@
 # A very simple Flask Hello World app for you to get started with...
 
 from flask import Flask, render_template
+from markupsafe import Markup
+from get_hours import schedule_cleaned
 
 app = Flask(__name__)
 
@@ -15,7 +17,9 @@ def about():
 
 @app.route('/order')
 def order():
-    return render_template("order.html")
+    promo = True
+    schedule = Markup("<br>".join(schedule_cleaned))
+    return render_template("order.html", schedule=schedule, promo=promo)
 
 
 if __name__ == "__main__":
