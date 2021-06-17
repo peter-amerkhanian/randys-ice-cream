@@ -18,7 +18,7 @@ def about():
 @app.route('/order')
 def order():
     promo = True
-    schedule = Markup("<br>".join(schedule_cleaned))
+    schedule = Markup("<br>".join(schedule_cleaned).strip("<br>"))
     return render_template("order.html", schedule=schedule, promo=promo)
 
 
