@@ -10,62 +10,122 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Randy's</title>
 
     <style>
-        /* html {
-            position: relative;
-            min-height: 100%;
-        } */
+        /* Main CSS */
+        html {
+            height: 100vh;
+        }
 
+        body {
+            min-height: 100vh;
+            padding: 0;
+            background-color: #fffdbd;
+        }
+        /* Top portion of the page will take up 80% */
+        main {
+            height: 80vh;
+        }
+        @media (max-width: 1400px) {
+            main {
+            height: auto;
+        }
 
+        }
 
+        /* Top Logo size */
+        #logo-img {
+            width: 15vw;
+        }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
-  margin-bottom: 2%;
-}
-@media (max-width: 820px) {
-    .footer {
-  position: relative;
-  width: 100%;
-  color: white;
-  text-align: center;
-  margin-bottom: 3%
-}
-}
+        @media (max-width: 1400px) {
+            #logo-img {
+            width: 20vw;
+        }
 
+        }
+        @media (max-width: 1200px) {
+            #logo-img {
+            width: 22vw;
+        }
 
+        }
+        @media (max-width: 992px) {
+            #logo-img {
+            width: 28vw;
+        }
+
+        }
+
+        @media (max-width: 768px) {
+            #logo-img {
+            width: 35vw;
+        }
+
+        }
+        @media (max-width: 576px) {
+            #logo-img {
+            width: 60vw;
+        }
+
+        }
+
+        /* Page Icon Images */
         .img-shift {
+            width: 85%;
+            margin: 0 auto;
             border-radius: 50%;
             -webkit-transition: -webkit-transform .4s ease-in-out;
             transition: transform .4s ease-in-out;
         }
+        @media (max-width: 1400px) {
+            .img-shift{
+            width: 85%;
+        }
 
-        /* .img-shift:hover {
-            -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-        } */
+        }
+        @media (max-width: 1200px) {
+            .img-shift {
+            width: 90%;
+        }
 
-        /* relevant styles */
+        }
+        @media (max-width: 992px) {
+            .img-shift {
+            width: 21vw;
+        }
+
+        }
+
+        @media (max-width: 768px) {
+            .img-shift {
+            width: 35vw;
+        }
+
+        }
+        @media (max-width: 576px) {
+            .img-shift {
+            width: 60vw;
+        }
+
+        }
+
+        /* Page Icon Images Wrapper*/
         .img__wrap {
             position: relative;
             width: 100%;
+            text-align: center;
             border-radius: 50%;
             -webkit-transition: -webkit-transform .4s ease-in-out;
             transition: transform .4s ease-in-out;
         }
-
-        @media (max-width: 820px) {
+        @media (max-width: 768px) {
 
             .img__wrap {
                 position: relative;
+                text-align: center;
                 margin-top: 10vmax;
                 margin-bottom: 10vmax;
                 width: 100%;
@@ -75,9 +135,7 @@
             }
 
         }
-
-
-
+        /* Page Icon Images Description Text*/
         .img__description {
             position: relative;
             top: 3vmax;
@@ -92,8 +150,7 @@
             /* transition effect. not necessary */
             transition: opacity .4s, visibility .2s;
         }
-
-        @media (max-width: 820px) {
+        @media (max-width: 768px) {
 
             .img__description {
                 position: relative;
@@ -110,6 +167,7 @@
 
         }
 
+        /* CSS Animations for Page Icons */
         .img__wrap:hover .img__description {
             visibility: visible;
             opacity: 1;
@@ -120,84 +178,126 @@
             transform: rotate(45deg);
         }
 
+        /* Links on this page will be black, with no text decorations */
         a:link {
             color: black;
         }
 
         a:hover {
             text-decoration: none;
+        }  
+        /* Footer will take up 20% of page height */
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            height: 20vh;
         }
-        
+        @media (max-width: 768px) {
+            .footer {
+                /* height: 20%; */
+                position: relative;
+                width: 100%;
+                text-align: center;
 
-        /* * { outline: 1px red solid !important; visibility: visible !important } */
+            }
+        }
+        #contact {
+            position: relative;
+            bottom: 0;
+            width: 50%;
+            height: 50%;
+            margin-top: 10vh;
+        }
+        @media (max-width: 768px) {
+            #contact {
+                width: 100%;
+
+            margin-top: 10vh;
+        }
+        }
+        /* Main CSS END */
+
+
+        /* * {
+            outline: 1px red solid !important;
+            visibility: visible !important
+        } */
     </style>
 </head>
 
-<body style="background-color: #fffdbd;">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-            </div>
-            <div class="col-sm">
-                <a href="{{ url_for('index') }}">
-                <img src="static/LOGO-01.png" style='width:80%;' alt="Logo">
-            </a>
-            </div>
-            <div class="col-sm">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm"></div>
+                <div class="col-sm">
 
-            <div class="col-sm">
-                <div class="img__wrap">
-                    <h4 class="img__description"><b>SHOP</b></h4>
-                    <a href="{{ url_for('order') }}"><img class="img-shift"
-                            src="static/Banana Man.svg" style='width:90%;z-index:2;' title="Banana Man"
-                            alt="Order"></a>
-
+                    <div class="container d-flex justify-content-center">
+                        <a href="{{ url_for('index') }}" style=>
+                            <img src="static/LOGO-01.png" id="logo-img" alt="Logo">
+                        </a>
+                    </div>
                 </div>
 
-            </div>
-
-            <div class="col-sm">
-                <div class="img__wrap">
-                    <h4 class="img__description"><b>ABOUT</b></h4>
-                    <a href="{{ url_for('about') }}"><img class="img-shift" src="static/Cone Man.svg"
-                            style='width:90%;z-index:1;' title="Smiley face" alt="About"></a>
-                </div>
-
-            </div>
-            <div class="col-sm">
-                <div class="img__wrap">
-                    <h4 class="img__description"><b>INSTAGRAM</b></h4>
-                    <a href="https://www.instagram.com/randysbesticecream/" target="_blank"><img class="img-shift"
-                            src="static/strawberry man.svg" style='width:90%;' title="Smiley face" alt="Instagram"></a>
-
-                </div>
+                <div class="col-sm"></div>
 
             </div>
         </div>
-    </div>
+        <div class="container">
+            <div class="row">
 
+                <div class="col-md">
+                    <div class="img__wrap">
+                        <h4 class="img__description"><b>SHOP</b></h4>
+                        <a href="{{ url_for('order') }}"><img class="img-shift" src="static/Banana Man.svg"
+                                style='z-index:2;' title="Banana Man" alt="Order"></a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md">
+
+                    <div class="img__wrap">
+                        <h4 class="img__description"><b>ABOUT</b></h4>
+                        <a href="{{ url_for('about') }}"><img class="img-shift" src="static/Cone Man.svg"
+                                style='z-index:1;' title="Smiley face" alt="About"></a>
+
+                    </div>
+
+                </div>
+                <div class="col-md">
+                    <div class="img__wrap">
+                        <h4 class="img__description"><b>INSTAGRAM</b></h4>
+                        <a href="https://www.instagram.com/randysbesticecream/" target="_blank"><img class="img-shift"
+                                src="static/strawberry man.svg" title="Smiley face" alt="Instagram"></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
     <footer class="footer">
-        <div class="container mb-1" id="contact" style="cursor:pointer; color:black;">
-                <h3><b>CONTACT</b></h3>
+        <div class="container" id="contact" style="cursor:pointer; color:black;">
+            <h3><b>CONTACT</b></h3>
         </div>
     </footer>
 
 </body>
 
 <script>
+    // This script is Jquery that will animate the contact button -> email/phone
     $(document).ready(function () {
-    $("#contact").click(function () {
-        $("#contact").fadeOut(function () {
-            $("#contact").html(($("#contact").html() == '<b>510-524-4085 | randysbesticecream@gmail.com </b>') ? '<h3><b>CONTACT</b></h3>' : '<b>510-524-4085 | randysbesticecream@gmail.com </b>').fadeIn();
+        $("#contact").click(function () {
+            $("#contact").fadeOut(function () {
+                $("#contact").html(($("#contact").html() == '<b>510-524-4085 | randysbesticecream@gmail.com </b>') ? '<h3><b>CONTACT</b></h3>' : '<b>510-524-4085 | randysbesticecream@gmail.com </b>').fadeIn();
+            })
         })
-    })
-});
+    });
 
-    </script>
+</script>
 
 </html>

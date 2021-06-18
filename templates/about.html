@@ -14,54 +14,120 @@
     <title>Randy's</title>
 
     <style>
+        /* Main CSS */
         html {
-            position: relative;
-            min-height: 100%;
+            height: 100vh;
         }
 
         body {
-            margin-bottom: 100px;
-            /* Margin bottom by footer height */
+            min-height: 100vh;
+            padding: 0;
+            background-color: #fffdbd;
+        }
+        /* Top portion of the page will take up 80% */
+        main {
+            height: 80vh;
+        }
+        @media (max-width: 1400px) {
+            main {
+            height: auto;
         }
 
-
-        .footer {
-            position: relative;
-            width: 100%;
-            color: white;
-            text-align: center;
-            margin-bottom: 3%
         }
 
+        /* Top Logo size */
+        #logo-img {
+            width: 15vw;
+        }
 
+        @media (max-width: 1400px) {
+            #logo-img {
+            width: 20vw;
+        }
+
+        }
+        @media (max-width: 1200px) {
+            #logo-img {
+            width: 22vw;
+        }
+
+        }
+        @media (max-width: 992px) {
+            #logo-img {
+            width: 28vw;
+        }
+
+        }
+
+        @media (max-width: 768px) {
+            #logo-img {
+            width: 35vw;
+        }
+
+        }
+        @media (max-width: 576px) {
+            #logo-img {
+            width: 60vw;
+        }
+
+        }
+
+        /* Page Icon Images */
         .img-shift {
+            width: 85%;
+            margin: 0 auto;
             border-radius: 50%;
             -webkit-transition: -webkit-transform .4s ease-in-out;
             transition: transform .4s ease-in-out;
         }
+        @media (max-width: 1400px) {
+            .img-shift{
+            width: 85%;
+        }
 
-        /* .img-shift:hover {
-            -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-        } */
+        }
+        @media (max-width: 1200px) {
+            .img-shift {
+            width: 90%;
+        }
 
-        /* relevant styles */
+        }
+        @media (max-width: 992px) {
+            .img-shift {
+            width: 21vw;
+        }
+
+        }
+
+        @media (max-width: 768px) {
+            .img-shift {
+            width: 35vw;
+        }
+
+        }
+        @media (max-width: 576px) {
+            .img-shift {
+            width: 60vw;
+        }
+
+        }
+
+        /* Page Icon Images Wrapper*/
         .img__wrap {
             position: relative;
-            height: 100%;
             width: 100%;
+            text-align: center;
             border-radius: 50%;
             -webkit-transition: -webkit-transform .4s ease-in-out;
             transition: transform .4s ease-in-out;
         }
-
-        @media (max-width: 820px) {
+        @media (max-width: 768px) {
 
             .img__wrap {
                 position: relative;
+                text-align: center;
                 margin-top: 10vmax;
                 margin-bottom: 10vmax;
-                height: 100%;
                 width: 100%;
                 border-radius: 50%;
                 -webkit-transition: -webkit-transform .4s ease-in-out;
@@ -69,7 +135,7 @@
             }
 
         }
-
+        /* Page Icon Images Description Text*/
         .img__description {
             position: relative;
             top: 3vmax;
@@ -84,8 +150,7 @@
             /* transition effect. not necessary */
             transition: opacity .4s, visibility .2s;
         }
-
-        @media (max-width: 820px) {
+        @media (max-width: 768px) {
 
             .img__description {
                 position: relative;
@@ -102,6 +167,7 @@
 
         }
 
+        /* CSS Animations for Page Icons */
         .img__wrap:hover .img__description {
             visibility: visible;
             opacity: 1;
@@ -112,45 +178,85 @@
             transform: rotate(45deg);
         }
 
-        a:link {
+        /* Links on this page will be black, with no text decorations */
+        /* a:link {
             color: black;
-        }
+        } */
 
         a:hover {
             text-decoration: none;
+        }  
+        /* Footer will take up 20% of page height */
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            height: 20vh;
         }
-        .computer{
-        display: block;
-    }
-    .phone{
-        display: none;
-    }
+        @media (max-width: 768px) {
+            .footer {
+                /* height: 20%; */
+                position: relative;
+                width: 100%;
+                text-align: center;
 
-        @media (max-width:770px){
-    .computer{
-        display: none;
-    }
-    .phone{
-        display: block;
-    }
-}
+            }
+        }
+        #contact {
+            position: relative;
+            bottom: 0;
+            width: 50%;
+            height: 50%;
+            margin-top: 10vh;
+        }
+        @media (max-width: 768px) {
+            #contact {
+                width: 100%;
+
+            margin-top: 10vh;
+        }
+        }
+        /* Main CSS END */
+
+        .computer {
+            display: block;
+        }
+
+        .phone {
+            display: none;
+        }
+
+        @media (max-width:768px) {
+            .computer {
+                display: none;
+            }
+
+            .phone {
+                display: block;
+            }
+        }
     </style>
-    </head>
+</head>
 
 <body style="background-color: #fffdbd;">
-    <!-- <div class="d-inline-flex p-2 justify-content-center">
-        <img src="LOGO-01.png" style='width:50%;' alt="Italian Trulli">
-    </div> -->
+
 
     <div class="container">
-        <div class="row">
-            <div class="col-sm">
-            </div>
-            <div class="col-sm">
-                <a href="{{ url_for('index') }}"><img src="static/LOGO-01.png" style='width:80%;'
-                        alt="logo"></a>
-            </div>
-            <div class="col-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm"></div>
+                <div class="col-sm">
+
+                    <div class="container d-flex justify-content-center">
+                        <a href="{{ url_for('index') }}" style=>
+                            <img src="static/LOGO-01.png" id="logo-img" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm"></div>
+
             </div>
         </div>
         <div class="container">
@@ -176,19 +282,22 @@
                 <div class="col-md-4">
                     <p style="text-align: center; max-width: 80vmax;">
                         <!-- Content goes here -->
-                        Here at Randy’s Best Ice Cream we make handmade, small-batch ice cream with zero artificial stabilizers and Clover Organic Milk. 
-                        We want to bring classic American favorites as well as new. 
-                        We like to think about what it means to eat cream in America today. 
-                        What makes vanilla and strawberry classic? Green tea ice cream wasn’t always around, but it’s here to stay. 
-                        Why is that? We want to bring a new variety of ice cream for people to enjoy without losing the nostalgia. 
-                        We use the best local ingredients to bring you flavors that sing. Because to support local is to support people doing it the right way.
+                        Here at Randy’s Best Ice Cream we make handmade, small-batch ice cream with zero artificial
+                        stabilizers and Clover Organic Milk.
+                        We want to bring classic American favorites as well as new.
+                        We like to think about what it means to eat cream in America today.
+                        What makes vanilla and strawberry classic? Green tea ice cream wasn’t always around, but it’s
+                        here to stay.
+                        Why is that? We want to bring a new variety of ice cream for people to enjoy without losing the
+                        nostalgia.
+                        We use the best local ingredients to bring you flavors that sing. Because to support local is to
+                        support people doing it the right way.
                         <!-- Content ends here -->
                     </p>
                 </div>
 
                 <div class="col-md-4 computer">
-                    <img
-                    src="static/randys.png" class="img-fluid" alt="Randys">
+                    <img src="static/randys.png" class="img-fluid" alt="Randys">
                 </div>
             </div>
 
@@ -227,12 +336,21 @@
                 <h1>Press</h1>
             </div>
             <div class="row justify-content-center">
-                <p><a style="text-decoration: underline" href="https://www.berkeleyside.com/2021/04/22/randys-best-ice-cream-albany">
-                    <b>Albany chef brings retro ice cream cart to his hometown</b></a> - Berkeleyside 4/22/2021
-                    </p>
-                    <p><a style="text-decoration: underline" href="https://www.theinfatuation.com/san-francisco/guides/new-things-to-do-eat-in-san-francisco-this-week-april-20-2021">
+
+                
+                <p><a style="text-decoration: underline"
+                    href="https://www.sfchronicle.com/food/article/best-ice-cream-gelato-sf-bay-area-16252307.php">
+                    <b>The 12 best ice cream spots in San Francisco and the Bay Area</b></a> - San Francisco Chronicle 6/17/2021
+            </p>
+
+                <p><a style="text-decoration: underline"
+                        href="https://www.berkeleyside.com/2021/04/22/randys-best-ice-cream-albany">
+                        <b>Albany chef brings retro ice cream cart to his hometown</b></a> - Berkeleyside 4/22/2021
+                </p>
+                <p><a style="text-decoration: underline"
+                        href="https://www.theinfatuation.com/san-francisco/guides/new-things-to-do-eat-in-san-francisco-this-week-april-20-2021">
                         <b>5 New Things To Do & Eat In San Francisco This Week</b></a> - The Infatuation 4/20/2021
-                        </p>
+                </p>
             </div>
 
 
@@ -240,6 +358,7 @@
 
         </div>
     </div>
+    <div style="height:50px;"></div>
 
 </body>
 

@@ -4,6 +4,8 @@
 from flask import Flask, render_template
 from markupsafe import Markup
 from get_hours import schedule_cleaned
+import os.path
+
 
 app = Flask(__name__)
 
@@ -17,7 +19,8 @@ def about():
 
 @app.route('/order')
 def order():
-    promo = True
+    promo = os.path.isfile(os.path.abspath("static/Promo.png")) and os.path.isfile(os.path.abspath("static/Promo.png"))
+    print(promo)
     schedule = Markup("<br>".join(schedule_cleaned).strip("<br>"))
     return render_template("order.html", schedule=schedule, promo=promo)
 
