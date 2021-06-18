@@ -119,23 +119,26 @@
         a:hover {
             text-decoration: none;
         }
-        .computer{
-        display: block;
-    }
-    .phone{
-        display: none;
-    }
 
-        @media (max-width:770px){
-    .computer{
-        display: none;
-    }
-    .phone{
-        display: block;
-    }
-}
+        .computer {
+            display: block;
+        }
+
+        .phone {
+            display: none;
+        }
+
+        @media (max-width:770px) {
+            .computer {
+                display: none;
+            }
+
+            .phone {
+                display: block;
+            }
+        }
     </style>
-    </head>
+</head>
 
 <body style="background-color: #fffdbd;">
     <!-- <div class="d-inline-flex p-2 justify-content-center">
@@ -147,8 +150,7 @@
             <div class="col-sm">
             </div>
             <div class="col-sm">
-                <a href="{{ url_for('index') }}"><img src="static/LOGO-01.png" style='width:80%;'
-                        alt="logo"></a>
+                <a href="{{ url_for('index') }}"><img src="static/LOGO-01.png" style='width:80%;' alt="logo"></a>
             </div>
             <div class="col-sm">
             </div>
@@ -176,19 +178,22 @@
                 <div class="col-md-4">
                     <p style="text-align: center; max-width: 80vmax;">
                         <!-- Content goes here -->
-                        Here at Randy’s Best Ice Cream we make handmade, small-batch ice cream with zero artificial stabilizers and Clover Organic Milk. 
-                        We want to bring classic American favorites as well as new. 
-                        We like to think about what it means to eat cream in America today. 
-                        What makes vanilla and strawberry classic? Green tea ice cream wasn’t always around, but it’s here to stay. 
-                        Why is that? We want to bring a new variety of ice cream for people to enjoy without losing the nostalgia. 
-                        We use the best local ingredients to bring you flavors that sing. Because to support local is to support people doing it the right way.
+                        Here at Randy’s Best Ice Cream we make handmade, small-batch ice cream with zero artificial
+                        stabilizers and Clover Organic Milk.
+                        We want to bring classic American favorites as well as new.
+                        We like to think about what it means to eat cream in America today.
+                        What makes vanilla and strawberry classic? Green tea ice cream wasn’t always around, but it’s
+                        here to stay.
+                        Why is that? We want to bring a new variety of ice cream for people to enjoy without losing the
+                        nostalgia.
+                        We use the best local ingredients to bring you flavors that sing. Because to support local is to
+                        support people doing it the right way.
                         <!-- Content ends here -->
                     </p>
                 </div>
 
                 <div class="col-md-4 computer">
-                    <img
-                    src="static/randys.png" class="img-fluid" alt="Randys">
+                    <img src="static/randys.png" class="img-fluid" alt="Randys">
                 </div>
             </div>
 
@@ -227,12 +232,21 @@
                 <h1>Press</h1>
             </div>
             <div class="row justify-content-center">
-                <p><a style="text-decoration: underline" href="https://www.berkeleyside.com/2021/04/22/randys-best-ice-cream-albany">
-                    <b>Albany chef brings retro ice cream cart to his hometown</b></a> - Berkeleyside 4/22/2021
-                    </p>
-                    <p><a style="text-decoration: underline" href="https://www.theinfatuation.com/san-francisco/guides/new-things-to-do-eat-in-san-francisco-this-week-april-20-2021">
+
+                
+                <p><a style="text-decoration: underline"
+                    href="https://www.sfchronicle.com/food/article/best-ice-cream-gelato-sf-bay-area-16252307.php">
+                    <b>The 12 best ice cream spots in San Francisco and the Bay Area</b></a> - San Francisco Chronicle 6/17/2021
+            </p>
+
+                <p><a style="text-decoration: underline"
+                        href="https://www.berkeleyside.com/2021/04/22/randys-best-ice-cream-albany">
+                        <b>Albany chef brings retro ice cream cart to his hometown</b></a> - Berkeleyside 4/22/2021
+                </p>
+                <p><a style="text-decoration: underline"
+                        href="https://www.theinfatuation.com/san-francisco/guides/new-things-to-do-eat-in-san-francisco-this-week-april-20-2021">
                         <b>5 New Things To Do & Eat In San Francisco This Week</b></a> - The Infatuation 4/20/2021
-                        </p>
+                </p>
             </div>
 
 
