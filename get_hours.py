@@ -3,7 +3,7 @@ import csv
 schedule_raw = []
 
 # Open .csv and reduce to list of lists
-with open("static/schedule.csv", mode="r") as f:
+with open("/home/nbrandon62/randys-ice-cream/static/schedule.csv", mode="r") as f:
     schedule_csv = csv.reader(f)
     fields = next(schedule_csv)
     for row in schedule_csv:
