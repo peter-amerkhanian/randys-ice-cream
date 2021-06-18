@@ -3,8 +3,15 @@ import os.path
 
 schedule_raw = []
 
+production = not os.path.isfile('static/LOGO-01.png')
+
+if production:
+    schedule_path = "/home/nbrandon62/randys-ice-cream/static/schedule.csv"
+else:
+    schedule_path = "static/schedule.csv"
+
 # Open .csv and reduce to list of lists
-with open("/home/nbrandon62/randys-ice-cream/static/schedule.csv", mode="r") as f:
+with open(schedule_path, mode="r") as f:
     schedule_csv = csv.reader(f)
     fields = next(schedule_csv)
     for row in schedule_csv:

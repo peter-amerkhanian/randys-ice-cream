@@ -3,11 +3,18 @@
 
 from flask import Flask, render_template
 from markupsafe import Markup
-from get_hours import schedule_cleaned
+from get_hours import schedule_cleaned, production
 import os.path
 
 
 app = Flask(__name__)
+
+if production:
+    static_path = "/home/nbrandon62/randys-ice-cream/static/"
+else:
+    static_path = "static/"
+
+print(production)
 
 @app.route('/')
 def index():
@@ -19,7 +26,7 @@ def about():
 
 @app.route('/order')
 def order():
-    promo = os.path.isfile("/home/nbrandon62/randys-ice-cream/static/Promo Menu.png") and os.path.isfile("/home/nbrandon62/randys-ice-cream/static/Promo.png")
+    promo = os.path.isfile(f"{static_path}Promo Menu.png") and os.path.isfile(f"{static_path}Promo.png")
     print(promo)
     schedule = Markup("<br>".join(schedule_cleaned).strip("<br>"))
     return render_template("order.html", schedule=schedule, promo=promo)
