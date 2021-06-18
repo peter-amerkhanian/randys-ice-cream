@@ -19,7 +19,7 @@ def about():
 
 @app.route('/order')
 def order():
-    promo = os.path.isfile(os.path.abspath("static/Promo.png")) and os.path.isfile(os.path.abspath("static/Promo.png"))
+    promo = os.path.isfile("/home/nbrandon62/randys-ice-cream/static/Promo Menu.png") and os.path.isfile("/home/nbrandon62/randys-ice-cream/static/Promo.png")
     print(promo)
     schedule = Markup("<br>".join(schedule_cleaned).strip("<br>"))
     return render_template("order.html", schedule=schedule, promo=promo)
