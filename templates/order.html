@@ -310,19 +310,21 @@
             </ul>
             </p>
 
-            <br>
-
             {% if promo %}
             <p class="text-center"><b>Promo:</b>
             <p class="text-center">
-                <a href="static/Promo.png"><img src="static/Promo.png" class="menu" alt="promo"></a>
+                <a href="{{ promo_link }}" target="_blank"><img src="static/Promo.png" class="menu" alt="promo"></a>
             </p>
+            {% endif %}
 
+
+            {% if promo_menu %}
             <p class="text-center">
                 <a href="static/Promo Menu.png"><img src="static/Promo Menu.png" class="menu" alt="promo menu"></a>
             </p>
-            <br>
             {% endif %}
+
+            <br>
 
 
             <p class="text-center">

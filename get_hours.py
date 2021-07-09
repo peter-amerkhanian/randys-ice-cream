@@ -26,8 +26,9 @@ for day in schedule_raw:
         # Catch when http is not included
         if link.startswith("https://") or link.startswith("http://"):
             print('ok')
+            link_ammended = link
             # OK
-            schedule_cleaned.append(f'<a href="{link}" target="_blank"> {day[0]} {day[1]}</a>')
+            schedule_cleaned.append(f'<a href="{link_ammended}" target="_blank"> {day[0]} {day[1]}</a>')
         else:
             # Missing HTTP
             link_ammended = f"https://{link}"
@@ -36,3 +37,4 @@ for day in schedule_raw:
         schedule_cleaned.append(f"{day[0]} {day[1]}")
 
 print(schedule_cleaned)
+print(link_ammended)
