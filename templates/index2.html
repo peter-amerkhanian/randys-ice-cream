@@ -179,9 +179,9 @@
         }
 
         /* Links on this page will be black, with no text decorations */
-        a:link {
+        /* a:link {
             color: black;
-        }
+        } */
 
         a:hover {
             text-decoration: none;
@@ -281,14 +281,34 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="container" id="contact" style="cursor:pointer; color:black;">
-            <h3><b>CONTACT</b></h3>
+        <div class="container" id="contact" style="color:black;">
+            <h3 id="contact-text" style="cursor:pointer;"><b>CONTACT</b></h3>
+            <b id="contact-info" style="display:none">510-524-4085 | <a href="mailto:randysbesticecream@gmail.com">randysbesticecream@gmail.com</a></b>
         </div>
     </footer>
 
 </body>
 
 <script>
+    $(document).ready(function(){
+      $("#contact").click(function(){
+        $("#contact-text").css("display", "none");
+        $("#contact-info").fadeIn();
+      });
+    });
+    </script>
+
+<!-- <script>
+    $(document).ready(function () {
+        $("#contact").click(function () {
+            $("#contact").fadeTo(2000, 1, function () {
+                $("#contact").html('<b>510-524-4085 | <a href="mailto:randysbesticecream@gmail.com">randysbesticecream@gmail.com</a> </b>');
+            })
+        })
+    });
+</script> -->
+
+<!-- <script>
     // This script is Jquery that will animate the contact button -> email/phone
     $(document).ready(function () {
         $("#contact").click(function () {
@@ -298,6 +318,6 @@
         })
     });
 
-</script>
+</script> -->
 
 </html>
