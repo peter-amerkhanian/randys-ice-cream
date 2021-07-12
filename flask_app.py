@@ -4,6 +4,7 @@
 from flask import Flask, render_template
 from markupsafe import Markup
 from get_hours import schedule_cleaned, link_ammended, production
+from get_press import press_cleaned
 import os.path
 
 
@@ -14,7 +15,7 @@ if production:
 else:
     static_path = "static/"
 
-print(production)
+print("Production: ", production)
 
 @app.route('/')
 def index():
@@ -22,7 +23,8 @@ def index():
 
 @app.route('/about')
 def about():
-    return render_template("about.html")
+    press = Markup("".join(press_cleaned))
+    return render_template("about.html", press=press)
 
 @app.route('/order')
 def order():

@@ -8,3 +8,4 @@ log.txt
 analytics.py
 ips.csv
 __pycache__/get_hours.cpython-37.pyc
+__pycache__/get_press.cpython-37.pyc
