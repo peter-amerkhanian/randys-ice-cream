@@ -313,7 +313,11 @@
             {% if promo %}
             <p class="text-center"><b>Promo:</b>
             <p class="text-center">
+                {% if promo_link %}
                 <a href="{{ promo_link }}" target="_blank"><img src="static/Promo.png" class="menu" alt="promo"></a>
+                {% else %}
+                <a href="static/Promo.png" target="_blank"><img src="static/Promo.png" class="menu" alt="promo"></a>
+                {% endif %}
             </p>
             {% endif %}
 

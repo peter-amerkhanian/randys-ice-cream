@@ -10,31 +10,33 @@ if production:
 else:
     schedule_path = "static/schedule.csv"
 
-# Open .csv and reduce to list of lists
-with open(schedule_path, mode="r") as f:
-    schedule_csv = csv.reader(f)
-    fields = next(schedule_csv)
-    for row in schedule_csv:
-        schedule_raw.append(row)
 
-# Make into html text
-schedule_cleaned = []
+if os.path.isfile(schedule_path):
+    # Open .csv and reduce to list of lists
+    with open(schedule_path, mode="r") as f:
+        schedule_csv = csv.reader(f)
+        fields = next(schedule_csv)
+        for row in schedule_csv:
+            schedule_raw.append(row)
 
-for day in schedule_raw:
-    if day[2]:
-        link = day[2]
-        # Catch when http is not included
-        if link.startswith("https://") or link.startswith("http://"):
-            print('ok')
-            link_ammended = link
-            # OK
-            schedule_cleaned.append(f'<a href="{link_ammended}" target="_blank"> {day[0]} {day[1]}</a>')
+    # Make into html text
+    schedule_cleaned = []
+    link_ammended = None
+
+    for day in schedule_raw:
+        if day[2]:
+            link = day[2]
+            # Catch when http is not included
+            if link.startswith("https://") or link.startswith("http://"):
+                link_ammended = link
+                # OK
+                schedule_cleaned.append(f'<a href="{link_ammended}" target="_blank"> {day[0]} {day[1]}</a>')
+            else:
+                # Missing HTTP
+                link_ammended = f"https://{link}"
+                schedule_cleaned.append(f'<a href="{link_ammended}" target="_blank"> {day[0]} {day[1]}</a>')
         else:
-            # Missing HTTP
-            link_ammended = f"https://{link}"
-            schedule_cleaned.append(f'<a href="{link_ammended}" target="_blank"> {day[0]} {day[1]}</a>')
-    else:
-        schedule_cleaned.append(f"{day[0]} {day[1]}")
-
-print(schedule_cleaned)
-print(link_ammended)
+            schedule_cleaned.append(f"{day[0]} {day[1]}")
+else:
+    schedule_cleaned = None
+    link_ammended = None
