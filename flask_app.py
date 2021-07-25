@@ -20,7 +20,8 @@ print("Production: ", production)
 
 @app.route('/')
 def index():
-    return render_template("index2.html")
+    closed = os.path.isfile(f"{static_path}/closed.png")
+    return render_template("index2.html", closed=closed)
 
 @app.route('/about')
 def about():
