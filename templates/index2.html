@@ -77,6 +77,47 @@
 
         }
 
+
+         /* Closed Logo size */
+         #closed-img {
+            width: 35vw;
+        }
+
+        @media (max-width: 1400px) {
+            #closed-img {
+                width: 35vw;
+            }
+
+        }
+
+        @media (max-width: 1200px) {
+            #closed-img {
+                width: 40vw;
+            }
+
+        }
+
+        @media (max-width: 992px) {
+            #closed-img {
+                width: 45vw;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+            #closed-img {
+                width: 60vw;
+            }
+
+        }
+
+        @media (max-width: 576px) {
+            #closed-img {
+                width: 70vw;
+            }
+
+        }
+
         /* Page Icon Images */
         .img-shift {
             width: 85%;
@@ -273,7 +314,7 @@
         {% if closed %}
         <div id="overlay">
             <div id="home_text">
-                <img src="static/closed.png" id="logo-img" alt="Logo">
+                <img src="static/closed.png" id="closed-img" alt="Logo">
             </div>
         </div>
         {% endif %}
