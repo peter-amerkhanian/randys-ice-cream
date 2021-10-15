@@ -36,7 +36,7 @@ if os.path.isfile(schedule_path):
                 link_ammended = f"https://{link}"
                 schedule_cleaned.append(f'<a href="{link_ammended}" target="_blank"> {day[0]} {day[1]}</a>')
         else:
-            schedule_cleaned.append(f"{day[0]} {day[1]}")
+            schedule_cleaned.append(f"{day[0]} {day[1]}<br>")
 else:
     schedule_cleaned = None
     link_ammended = None

@@ -41,7 +41,7 @@ def order():
     print("promo_menu:", promo_menu)
     print("link:", promo_link)
     if schedule_cleaned:
-        schedule = Markup("<br>".join(schedule_cleaned).strip("<br>"))
+        schedule = Markup("".join(schedule_cleaned).strip("<br>"))
         pickle.dump( schedule, open( f"{static_path}backup_schedule.p", "wb" ) )
     else:
         schedule = pickle.load( open( f"{static_path}backup_schedule.p", "rb" ) )
